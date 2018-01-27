@@ -1,0 +1,2 @@
+#este arquivo garante que  trabalho/static será adicionado no projeto.
+# O Django reunirá os arquivos estáticos e os colocará em trabalho/static
