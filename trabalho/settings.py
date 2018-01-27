@@ -122,8 +122,8 @@ STATIC_URL = '/static/'
 
 
 #configurações pro Heroku
-if os.getcwd() == '/app:
-#if os.getcwd():
+#if os.getcwd() == '/app:
+if os.getcwd():
 	import dj_database_url
 	DATABASES = {
 		'default':dj_database_url.config(default='postgres://localhost')
