@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'k10vz+3zu5+=)-ze1+rjbrea+m@yt+r()sh7f0h1f71v5f6*&x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -122,7 +122,8 @@ STATIC_URL = '/static/'
 
 
 #configurações pro Heroku
-if os.getcwd() == '/app':
+if os.getcwd() == '/app:
+#if os.getcwd():
 	import dj_database_url
 	DATABASES = {
 		'default':dj_database_url.config(default='postgres://localhost')
